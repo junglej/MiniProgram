@@ -1,0 +1,53 @@
+<view style="width:100%; background: none;">
+
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" style="background: white; height: 200px; width: 100%;">
+      <swiper-item><image src="Images/HomeCover04.jpg" mode='widthFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="Images/HomeCover04.jpg" mode='widthFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="Images/HomeCover06.jpg" mode='widthFix' class="swiper-image" /></swiper-item>
+  </swiper>
+
+<view class="form-group_label">🐻 欢迎回来</view>
+  <view class="form-group" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);">
+    <!-- <view class="form-cell">
+      <view class="slide">
+        <view class="title">欢迎！蓝卡比和红卡比！</view>
+      </view>
+    </view> -->
+    <view class="form-cell">
+      <view class="slide">
+        <view class="title">今天想做什么呢？</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="form-group_label">💰 积分榜</view>
+    <view class="form-group" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);">
+    <view class="form-cell">
+        <view class="slide">
+        <view class="title">{{userA}}的积分：{{creditA}}</view>
+        </view>
+    </view>
+    <view class="form-cell">
+        <view class="slide">
+        <view class="title">{{userB}}的积分：{{creditB}}</view>
+        </view>
+    </view>
+</view>
+
+
+<view class="form-group_label">生活记录<mp-badge content="{{unfinishedMissions.length}}" style="margin-left: 5px;" />
+    <view class="title">暂无记录</view>
+    <view class="subtitle">好像什么记录也没有...</view>
+</view>
+
+<view class="container" wx:if="{{allMotion.length > 0}}"></view>
+
+  <movable-area style="pointer-events: none; position: fixed; width: 100%; height: 100%;">
+  <movable-view style="pointer-events: auto; width: 20%; height: 20%;" x="{{screenWidth}}" y="{{screenHeight}}" direction="all">
+    <button class="btn-normal" hover-class="btn-hover" size="mini" bindtap="toAddPage" 
+    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+      <image style = "margin-top: 10px; height: 100%; width: 100%;" mode="widthFix" src="Images/Plus.png"/>心情
+    </button>
+  </movable-view>
+</movable-area>

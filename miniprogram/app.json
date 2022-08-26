@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/MainPage/index",
+    "pages/MotionAdd/index",
+    "pages/Mission/index",
+    "pages/MissionAdd/index",
+    "pages/MissionDetail/index",
+    "pages/Market/index",
+    "pages/MarketAdd/index",
+    "pages/MarketDetail/index",
+    "pages/Account/index",
+    "pages/ItemDetail/index"
+  ],
+  "window": {
+    "backgroundColor": "#6495ED",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "卷起来",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#1a1a1a",
+    "selectedColor": "#ff99aa",
+    "list": [{
+      "pagePath": "pages/MainPage/index",
+      "selectedIconPath": "images/TabBar/HomeIconColor.jpg",
+      "iconPath": "images/TabBar/HomeIconGrey.jpg",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/Mission/index",
+      "selectedIconPath": "images/TabBar/MissionIconColor.jpg",
+      "iconPath": "images/TabBar/MissionIconGrey.jpg",
+      "text": "任务"
+    },{
+      "pagePath": "pages/Market/index",
+      "selectedIconPath": "images/TabBar/MarketIconColor.jpg",
+      "iconPath": "images/TabBar/MarketIconGrey.jpg",
+      "text": "心愿单"
+    },{
+      "pagePath": "pages/Account/index",
+      "selectedIconPath": "images/TabBar/AccountIconColor.jpg",
+      "iconPath": "images/TabBar/AccountIconGrey.jpg",
+      "text": "我"
+    }]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "cloud": true,
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
